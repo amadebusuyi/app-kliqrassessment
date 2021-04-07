@@ -1,7 +1,8 @@
 {
-  "name": "react",
+  "name": "kliqr-assessment",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "",
+  "author": "Adebowale Adebusuyi",
   "keywords": [
     "react",
     "starter"
