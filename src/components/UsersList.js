@@ -3,7 +3,6 @@ import formatTime from "./timer";
 import Custom from "./functions";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import UserInformation from "./UserInformation";
 const axios = require("axios");
 
 
@@ -24,7 +23,6 @@ const UsersList = () => {
                 user.first_name + " " + user.last_name
               )}
             >
-              {/*onClick={e => UserInformation(e, user.id)}*/}
               
               <div className="col-2">
                 <img className="user-image" src={user.avatar} alt="" />
@@ -82,7 +80,6 @@ function UsersListData({isLoading, ...props}) {
       })
       .then(function () {
         // always executed
-        // window.location.reload(false);
       });
   }, [setUsers]);
 
@@ -98,11 +95,6 @@ function UsersListData({isLoading, ...props}) {
 		      className="user-list"
 		    />
 		</div>
-		{/*<div>
-		<Route>
-			<UserInformation />
-		</Route>
-		</div>*/}
 	</div>
   )
 }

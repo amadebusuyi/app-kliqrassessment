@@ -31,31 +31,6 @@ const [recur, setRecur] = useState({
     }
   }
 
-// function LoadDataApi (){
-//   useEffect(() => {  
-//     let one = `https://similar-kliqrassessment.herokuapp.com/${id}`
-//     let two = `https://recurring-kliqrassessment.herokuapp.com/${id}`
-//     // let three = "https://api.storyblok.com/v1/cdn/stories/vue?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt"
-     
-//     const requestOne = axios.get(one);
-//     const requestTwo = axios.get(two);
-//     // const requestThree = axios.get(three);
-//     axios.all([requestOne, requestTwo]).then(axios.spread((...responses) => {
-//       const similarUs = responses[0]
-//       const recurringExp = responses[1]
-//      let data = recurringExp.data.data;
-//      // console.log(data);
-//       setRecur({recur: data});
-//       // use/access the results 
-//     })).catch(errors => {
-//       // react on errors.
-//     })
-//   }, [setRecur])
-
-//   return(
-//     <div><RecurringExpenses recurrings={recur.recur} /></div>
-//   )
-// }
 
   // GET USERDATA from LocalStorage
   var users = localStorage.kliQrUsers;
