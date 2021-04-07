@@ -1,0 +1,186 @@
+.App {
+  font-family: "montserrat";
+  text-align: center;
+}
+
+.custom-navbar {
+  height: 40px;
+  background: #423c68;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.users-list {
+  /* border-right: 2px solid #f1f1f1; */
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.users-list ul {
+  padding-left: 0;
+}
+
+.users-list .user-in-list {
+  list-style: none;
+}
+
+.users-list .user-in-list a {
+  height: 60px;
+  margin-bottom: 5px;
+  text-align: left;
+  list-style: none;
+  width: 100%;
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+}
+
+.users-list .user-in-list:hover {
+  background: #f2f5f5;
+}
+
+.users-list .user-in-list .user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.users-list .user-in-list .user-name {
+  margin-bottom: 0px;
+}
+
+.users-list .user-in-list .user-description {
+  margin-bottom: 5px;
+}
+.user-info {
+  position: absolute;
+  left: 420px;
+  min-width: 900px;
+  right: 0;
+  top: 40px;
+  padding-top: 40px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.user-info .user-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.user-summary {
+  font-family: "Space Mono";
+  color: #4a47a3;
+  box-shadow: 0 0 3px #eee;
+  display: inline-block;
+  width: 200px;
+  margin: 2.5px;
+  text-align: left;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.user-summary {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.user-summary p {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.recurring-exp {
+  font-family: "Mono Space";
+  text-align: left;
+  position: relative;
+  left: 50px;
+  text-transform: capitalize;
+}
+
+.recurring-exp h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.recurring-exp span {
+  height: 50px;
+  width: 60px;
+  display: inline-block;
+  background: #a7c5eb;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.recurring-exp span img {
+  height: 100%;
+  width: auto;
+}
+
+ul.similar-users-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.similar-users-list .user-in-list {
+  list-style: none;
+}
+
+.similar-users-list .user-in-list a {
+  height: 60px;
+  margin-bottom: 5px;
+  text-align: left;
+  list-style: none;
+  width: 100%;
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+}
+
+.similar-users-list .user-in-list:hover {
+  background: #f2f5f5;
+}
+
+.similar-users-list .user-in-list .user-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.similar-users-list .user-in-list .user-name {
+  margin-bottom: 0px;
+}
+
+.similar-users-list .user-in-list .user-description {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .users-list {
+    border-right: none;
+    width: 100vw;
+  }
+
+  .user-info {
+    width: 100vw;
+    display: none;
+  }
+}
