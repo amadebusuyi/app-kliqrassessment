@@ -9,6 +9,18 @@ import UserInfo from "./components/UserInfo";
 // const axios = require("axios");
 
 export default function App() {
+  var clickFirst = (parent) => {
+    var parent = document.querySelector(parent);
+    parent.children[0].click();
+  }
+setTimeout(() => {
+  if(document.querySelector(".list-of-users")){
+  alert(100);
+    clickFirst(".list-of-users");
+  }
+},5000)
+  
+
 
   return (
     <div className="App">

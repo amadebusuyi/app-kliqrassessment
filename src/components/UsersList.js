@@ -12,7 +12,7 @@ const UsersList = () => {
   const { users } = props;
   if (!users || users.length === 0) return <p>No users, sorry</p>;
   return (
-    <ul>
+    <ul className="list-of-users" onLoad={e => Custom.clickFirst(".list-of-users")}>
       {users.map((user) => {
         return (
           <li key={user.id} className="px-3 user-in-list">

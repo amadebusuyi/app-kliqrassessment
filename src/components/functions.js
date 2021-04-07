@@ -12,7 +12,7 @@ var slugs = localStorage.slugs;
 if (slugs === "undefined" || !slugs) slugs = [];
 else slugs = JSON.parse(slugs);
 var slugify = (text, id) => {
-  text = text.replace(/ /g, "-").toLowerCase() + "-" + id;
+  text = text.replace(/ /g, "-").toLowerCase() + "-" + id ;
   slugs.push({ id: id, slug: text });
   localStorage.slugs = JSON.stringify(slugs);
   return text;
@@ -31,6 +31,11 @@ var getSlug = (id, text) => {
   return slug;
 };
 
+var clickFirst = (parent) => {
+  var parent = document.querySelector(parent);
+  parent.children[0].click();
+}
+
 var formatMoney = (amount) => {
   amount = amount.replace(/₦/g, "");
   amount = amount.replace("$", "");
@@ -39,5 +44,5 @@ var formatMoney = (amount) => {
   return "₦" + amount;
 };
 
-var Custom = { makeRand: makeRand, getSlug: getSlug, formatMoney: formatMoney };
+var Custom = { makeRand: makeRand, getSlug: getSlug, formatMoney: formatMoney, clickFirst: clickFirst };
 export default Custom;
